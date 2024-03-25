@@ -1,3 +1,22 @@
+function showRegistration() {
+    document.getElementById('login-section').style.display = 'none';
+    document.getElementById('registration-section').style.display = 'block';
+}
+
+function showLogin() {
+    document.getElementById('registration-section').style.display = 'none';
+    document.getElementById('login-section').style.display = 'block';
+}
+
+function register() {
+    // Placeholder for actual registration logic
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+    console.log(`Registering user: ${username}`); // For demonstration purposes
+    alert('Registration successful! Please login.'); // Simulate successful registration
+    showLogin();
+}
+
 function login() {
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
@@ -13,6 +32,6 @@ function login() {
 }
 
 function logout() {
-    document.getElementById('login-section').style.display = 'block';
     document.getElementById('account-section').style.display = 'none';
+    document.getElementById('login-section').style.display = 'block';
 }
