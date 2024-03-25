@@ -30,11 +30,14 @@
             </form>
         </section>
 
-        <section id="account-overview">
-            <h2>Account Overview</h2>
-            <p>Account Number: <span id="account-number">123456789</span></p>
-            <p>Balance: <span id="balance">$1000.00</span></p>
-        </section>
+       <section id="account-section" style="display: none;">
+    <h2>Account Overview</h2>
+    <p>Welcome, <span id="display-username"></span>!</p>
+    <p>Balance: <span id="balance">$0.00</span></p>
+    <!-- Add more account details here -->
+    <button onclick="logout()">Logout</button>
+</section>
+
 
         <section id="transactions">
             <h2>Transactions</h2>
