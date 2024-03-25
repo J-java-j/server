@@ -19,6 +19,17 @@
                 <input type="password" id="login-password" placeholder="Password">
                 <button type="button" onclick="login()">Login</button>
             </form>
+            <p>Don't have an account? <button onclick="showRegistration()">Register</button></p>
+        </section>
+
+        <section id="registration-section" style="display: none;">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button type="button" onclick="register()">Register</button>
+            </form>
+            <p>Already have an account? <button onclick="showLogin()">Login</button></p>
         </section>
 
         <section id="account-section" style="display: none;">
