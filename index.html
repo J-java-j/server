@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Banking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Banking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="register">
+            <h2>Register</h2>
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="account">
+            <h2>Account Overview</h2>
+            <div>
+                <p>Account Number: <span id="account-number">123456789</span></p>
+                <p>Balance: <span id="balance">$0.00</span></p>
+            </div>
+            <div>
+                <h3>Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Transaction rows will go here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="transfer">
+            <h2>Transfer Funds</h2>
+            <form>
+                <label for="recipient-account">Recipient Account:</label>
+                <input type="text" id="recipient-account" name="recipient-account">
+                <label for="transfer-amount">Amount:</label>
+                <input type="number" id="transfer-amount" name="transfer-amount" step="0.01">
+                <button type="submit">Transfer</button>
+            </form>
+        </section>
+
+        <section id="loan">
+            <h2>Apply for a Loan</h2>
+            <form>
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" name="loan-amount" step="0.01">
+                <label for="loan-term">Loan Term (Years):</label>
+                <input type="number" id="loan-term" name="loan-term">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Banking System</p>
+    </footer>
+</body>
+</html>
